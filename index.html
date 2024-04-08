@@ -12,10 +12,10 @@
         <div v-if="n <= 0 || isNaN(n)">
             inserisci un numero superiore a 0 e non inserire caratteri 
         </div>
-        <ul>
-            <template v-for="email in emailList"> 
-                <li v-if="emailList.length === n">{{email}}</li>
-            </template>
+        <ul v-if="emailList.length === n">
+            
+            <li v-for="email in emailList">{{email}}</li>
+        
         </ul>
     </div>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
