@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <input type="number" v-model="n">
+        <button @click="randomEmail(n)">genera Array di email</button>
+        <div v-if="n <= 0 || isNaN(n)">
+            inserisci un numero superiore a 0 e non inserire caratteri 
+        </div>
+        <ul>
+            <li v-for="email in emailList" v-if="emailList.length === n">{{email}}</li>
+        </ul>
+    </div>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>
