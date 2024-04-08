@@ -13,7 +13,9 @@
             inserisci un numero superiore a 0 e non inserire caratteri 
         </div>
         <ul>
-            <li v-for="email in emailList" v-if="emailList.length === n">{{email}}</li>
+            <template v-for="email in emailList"> 
+                <li v-if="emailList.length === n">{{email}}</li>
+            </template>
         </ul>
     </div>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
