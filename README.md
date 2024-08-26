@@ -1,0 +1,1 @@
+Uno tra i primi esercizi utilizzando Vue.js da cdn in cui inserendo un numero casuale che non sia negativo nell'input genera quel numero di indirizzi email casuali richiamati tramite un api fornitaci da boolean per esercitarci.
